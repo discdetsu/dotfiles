@@ -1,0 +1,80 @@
+{
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+  "profiles": {
+    "list": [
+      {
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "name": "Command Prompt",
+        "commandline": "cmd.exe",
+        "hidden": false,
+        "colorScheme": "Gruvbox",
+        "fontFace": "Cascadia Code",
+        "fontSize": 12
+      },
+      {
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "name": "PowerShell",
+        "commandline": "powershell.exe",
+        "hidden": false,
+        "colorScheme": "Gruvbox",
+        "fontFace": "Cascadia Code",
+        "fontSize": 12
+      },
+      {
+        "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+        "name": "Ubuntu",
+        "source": "Windows.Terminal.Wsl",
+        "colorScheme": "Gruvbox",
+        "fontFace": "Cascadia Code",
+        "fontSize": 12
+      }
+    ]
+  },
+  "schemes": [
+    {
+      "name": "Gruvbox",
+      "background": "#282828",
+      "foreground": "#ebdbb2",
+      "black": "#1d2021",
+      "blue": "#458588",
+      "brightBlack": "#928374",
+      "brightBlue": "#83a598",
+      "brightCyan": "#8ec07c",
+      "brightGreen": "#b8bb26",
+      "brightPurple": "#d3869b",
+      "brightRed": "#fb4934",
+      "brightWhite": "#ebdbb2",
+      "brightYellow": "#fabd2f",
+      "cyan": "#689d6a",
+      "green": "#98971a",
+      "purple": "#b16286",
+      "red": "#cc241d",
+      "white": "#a89984",
+      "yellow": "#d79921"
+    }
+  ],
+  "actions": [
+    {
+      "command": {
+        "action": "openNewTab",
+        "profile": "PowerShell"
+      },
+      "keys": "ctrl+shift+1"
+    },
+    {
+      "command": {
+        "action": "openNewTab",
+        "profile": "Command Prompt"
+      },
+      "keys": "ctrl+shift+2"
+    },
+    {
+      "command": {
+        "action": "openNewTab",
+        "profile": "Ubuntu"
+      },
+      "keys": "ctrl+shift+3"
+    }
+  ]
+}
