@@ -1,7 +1,8 @@
-font-family = Iosevka Nerd Font
-font-size = 20
-theme = GruvboxDarkHard
-shell-integration-features = no-cursor,sudo,no-title
-cursor-style = block
-adjust-cell-height = 35%
-background-opacity = 0.96
+font-family = JetBrainsMono Nerd Font
+font-size = 18
+background-opacity = 0.9
+theme = ayu
+window-padding-x = 10
+window-padding-y = 10
+window-width = 120
+window-height = 30
