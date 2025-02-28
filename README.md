@@ -72,7 +72,7 @@ sudo chmod +x dotfiles/.install.sh
 - `after/plugin/` Post-plugin customization.
 
 ### Plugins
-[[nvim-treesitter]]
-[[nvim-tree]]
-[[bufferline]]
-[[lualine]]
+[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+[nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
+[bufferline](https://github.com/nvim-tree/nvim-tree.lua)
+[lualine](https://github.com/nvim-lualine/lualine.nvim)
