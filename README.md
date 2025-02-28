@@ -40,3 +40,39 @@ cd ~dotfiles
 sudo chmod +x dotfiles/.install.sh
 ./install.sh
 ``` 
+
+## Vim
+### Project Structure
+
+```plaintext
+~/.config/nvim/
+├── init.lua
+├── lazy-lock.json
+├── lua/
+│   ├── config/
+│   │   ├── lazy.lua
+│   │   ├── options.lua
+│   │   ├── keymaps.lua
+│   │   ├── autocmds.lua
+│	│	├── ui.lua
+│   ├── plugins/
+│   │   ├── coding.lua
+│   │   ├── lsp.lua
+│   │   ├── git.lua
+│   │   ├── tools.lua
+└── after/
+    ├── ftplugin/
+    ├── plugin/
+```
+- `init.lua` Main entry point; loads Lua modules.
+- `lua/keymaps.lua` Custom key mappings.
+- `lua/autocmds.lua` Auto commands.
+- `lua/plugins/ ` Individual plugin configurations.
+- `after/ftplugin/` Language-specific settings.
+- `after/plugin/` Post-plugin customization.
+
+### Plugins
+[[nvim-treesitter]]
+[[nvim-tree]]
+[[bufferline]]
+[[lualine]]
