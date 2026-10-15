@@ -1,8 +1,7 @@
--- Set leader key early
 vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 
--- Load configuration
-require("config.lazy")
 require("config.options")
 require("config.keymaps")
 require("config.autocmds")
+require("config.lazy")
