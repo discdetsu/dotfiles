@@ -43,7 +43,29 @@ opt.swapfile = false
 opt.updatetime = 250
 opt.timeoutlen = 300
 
--- Sync with system clipboard (deferred: the clipboard provider can be slow to start)
+-- Copy to the system clipboard with OSC 52 (Ghostty, through tmux) instead of wl-copy:
+-- on GNOME wl-copy/wl-paste open a hidden window per call, which pops up a
+-- "wl-clipboard is ready" notification on every dd/x. Paste returns Neovim's own last
+-- copy; paste text from other apps with Ctrl+Shift+V (works in normal mode too).
+local osc52 = require("vim.ui.clipboard.osc52")
+local last = { {}, "v" }
+local function copy(reg)
+  local send = osc52.copy(reg)
+  return function(lines, regtype)
+    last = { lines, regtype }
+    send(lines, regtype)
+  end
+end
+vim.g.clipboard = {
+  name = "OSC 52",
+  copy = { ["+"] = copy("+"), ["*"] = copy("*") },
+  paste = {
+    ["+"] = function() return last end,
+    ["*"] = function() return last end,
+  },
+}
+
+-- Sync with system clipboard
 vim.schedule(function()
   opt.clipboard = "unnamedplus"
 end)

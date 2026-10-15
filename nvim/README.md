@@ -601,5 +601,6 @@ The session name in the status bar turns orange while the prefix is active.
 | Formatting not running | `:ConformInfo`; check `:FormatToggle` state |
 | Slow startup | `:Lazy profile` |
 | Plugin errors after update | `:Lazy restore` to go back to `lazy-lock.json` versions |
+| `p` doesn't paste text copied in another app | Use `Ctrl+Shift+V`. The clipboard uses OSC 52 (set in `lua/config/options.lua`): copying goes to the system clipboard, but `p` only pastes Neovim's own last copy, because `wl-paste` would pop up a "wl-clipboard is ready" notice on GNOME |
 | Colors look wrong inside tmux | Restart the tmux server (`tmux kill-server`) so `default-terminal` / true color apply |
 | Start completely fresh | `rm -rf ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim` and restart |
