@@ -1,0 +1,67 @@
+# ~/.config/zathura/zathurarc — Everforest Dark Hard
+# Palette: https://github.com/sainnhe/everforest/blob/master/palette.md
+
+# ─── Window ──────────────────────────────────────────────────────────────────
+set adjust-open "width"
+set window-width 2560
+set window-height 1440
+set window-title-basename true
+set font "JetBrainsMono Nerd Font 11"
+
+# ─── Behaviour ───────────────────────────────────────────────────────────────
+set selection-clipboard clipboard   # selected text goes to the system clipboard (Ctrl-V)
+set scroll-page-aware true
+set scroll-step 80
+set incremental-search true
+set statusbar-h-padding 8
+set statusbar-v-padding 4
+set page-v-padding 4
+set page-h-padding 4
+
+# ─── Everforest Dark Hard ────────────────────────────────────────────────────
+set default-bg                  "#272e33"
+set default-fg                  "#d3c6aa"
+
+# Status bar and command line (like the tmux status bar)
+set statusbar-bg                "#2e383c"
+set statusbar-fg                "#d3c6aa"
+set inputbar-bg                 "#272e33"
+set inputbar-fg                 "#d3c6aa"
+
+# Messages
+set notification-bg             "#2e383c"
+set notification-fg             "#a7c080"
+set notification-warning-bg     "#2e383c"
+set notification-warning-fg     "#dbbc7f"
+set notification-error-bg       "#2e383c"
+set notification-error-fg       "#e67e80"
+
+# Search highlights and link hints
+set highlight-color             "rgba(219, 188, 127, 0.4)"
+set highlight-fg                "#272e33"
+set highlight-active-color      "rgba(167, 192, 128, 0.5)"
+
+# Index / table of contents (Tab)
+set index-bg                    "#272e33"
+set index-fg                    "#d3c6aa"
+set index-active-bg             "#374145"
+set index-active-fg             "#a7c080"
+
+# Completion menu (:open, :bmark …)
+set completion-bg               "#2e383c"
+set completion-fg               "#d3c6aa"
+set completion-group-bg         "#272e33"
+set completion-group-fg         "#859289"
+set completion-highlight-bg     "#374145"
+set completion-highlight-fg     "#a7c080"
+
+# Area outside pages, loading text
+set render-loading              true
+set render-loading-bg           "#272e33"
+set render-loading-fg           "#859289"
+
+# ─── Documents ───────────────────────────────────────────────────────────────
+# Pages keep their original colors (Ctrl-R still toggles a temporary dark recolor).
+set recolor                     false
+set recolor-lightcolor          "#272e33"
+set recolor-darkcolor           "#d3c6aa"

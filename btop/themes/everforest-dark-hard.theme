@@ -1,0 +1,64 @@
+# ~/.config/btop/themes/everforest-dark-hard.theme
+# Everforest Dark Hard
+# Palette: https://github.com/sainnhe/everforest/blob/master/palette.md
+
+# Main background and text
+theme[main_bg]="#272e33"
+theme[main_fg]="#d3c6aa"
+
+# Box titles, hotkey letters, muted text
+theme[title]="#d3c6aa"
+theme[hi_fg]="#a7c080"
+theme[inactive_fg]="#7a8478"
+theme[graph_text]="#859289"
+theme[meter_bg]="#414b50"
+theme[proc_misc]="#83c092"
+
+# Selected row in the process list
+theme[selected_bg]="#374145"
+theme[selected_fg]="#dbbc7f"
+
+# Box borders (same grey as tmux pane borders) and dividers
+theme[cpu_box]="#414b50"
+theme[mem_box]="#414b50"
+theme[net_box]="#414b50"
+theme[proc_box]="#414b50"
+theme[div_line]="#414b50"
+
+# Gradients: green -> yellow -> red
+theme[temp_start]="#a7c080"
+theme[temp_mid]="#dbbc7f"
+theme[temp_end]="#e67e80"
+
+theme[cpu_start]="#a7c080"
+theme[cpu_mid]="#dbbc7f"
+theme[cpu_end]="#e67e80"
+
+theme[used_start]="#a7c080"
+theme[used_mid]="#dbbc7f"
+theme[used_end]="#e67e80"
+
+theme[free_start]="#e67e80"
+theme[free_mid]="#dbbc7f"
+theme[free_end]="#a7c080"
+
+theme[available_start]="#e67e80"
+theme[available_mid]="#dbbc7f"
+theme[available_end]="#a7c080"
+
+theme[cached_start]="#7fbbb3"
+theme[cached_mid]="#83c092"
+theme[cached_end]="#a7c080"
+
+theme[process_start]="#a7c080"
+theme[process_mid]="#dbbc7f"
+theme[process_end]="#e67e80"
+
+# Network: download blue/aqua, upload orange/red
+theme[download_start]="#7fbbb3"
+theme[download_mid]="#83c092"
+theme[download_end]="#a7c080"
+
+theme[upload_start]="#dbbc7f"
+theme[upload_mid]="#e69875"
+theme[upload_end]="#e67e80"

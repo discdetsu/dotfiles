@@ -1,39 +1,21 @@
-set fish_greeting "
-██████████    ███             ███████████           
-░░███░░░░███  ░░░             ░█░░░░░░███            
- ░███   ░░███ ████   █████████░     ███░   █████ ████
- ░███    ░███░░███  ░█░░░░███      ███    ░░███ ░███ 
- ░███    ░███ ░███  ░   ███░      ███      ░███ ░███ 
- ░███    ███  ░███    ███░   █  ████     █ ░███ ░███ 
- ██████████   █████  █████████ ███████████ ░░███████ 
-░░░░░░░░░░   ░░░░░  ░░░░░░░░░ ░░░░░░░░░░░   ░░░░░███ 
-                                            ███ ░███ 
-                                           ░░██████  
-                                            ░░░░░░   "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+if status is-interactive
+    # Commands to run in interactive sessions can go here
 
-set -gx TERM xterm-256color
+    # Everforest Dark Hard syntax colors (~/.config/fish/themes/everforest-dark-hard.theme)
+    fish_config theme choose everforest-dark-hard --color-theme=dark
+end
 
-# theme
-set -g fish_prompt_pwd_dir_length 1
-set -g theme_display_user yes
-set -g theme_hide_hostname no
-set -g theme_hostname always
+set -g fish_greeting "Hello, DizZy"
 
 set -gx EDITOR nvim
+set -gx VISUAL nvim
 
-set -gx PATH bin $PATH
-set -gx PATH ~/bin $PATH
-set -gx PATH ~/.local/bin $PATH
-
-# aliases
 alias vim "nvim"
+alias cat "bat --paging=never"
 alias ls "eza --icons --color"
 alias la "eza -A -l -g --icons --color"
 alias ll "eza -l -g --icons --color"
-alias g git
 
-command -qv nvim && alias vim nvim
-
-direnv hook fish | source
-direnv export fish | source
 starship init fish | source
+
+export PATH="$HOME/.local/bin:$PATH"

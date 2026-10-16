@@ -1,0 +1,10 @@
+# ~/.config/bat/config — Everforest Dark Hard (theme in ./themes; run `bat cache --build` after editing it)
+--theme="everforest-dark-hard"
+
+# Line numbers, git changes and file name header
+--style="numbers,changes,header"
+--italic-text=always
+
+# Syntax mapping for files bat doesn't recognise
+--map-syntax="*.conf:INI"
+--map-syntax=".tmux.conf:Bourne Again Shell (bash)"
