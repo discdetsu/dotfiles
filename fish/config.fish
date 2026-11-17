@@ -17,5 +17,6 @@ alias la "eza -A -l -g --icons --color"
 alias ll "eza -l -g --icons --color"
 
 starship init fish | source
+zoxide init fish | source
 
 export PATH="$HOME/.local/bin:$PATH"
